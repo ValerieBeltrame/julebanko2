@@ -2,7 +2,7 @@
   "name": "julebanko",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://valeriebeltrame.github.io/julebankoo/",
+  "homepage": "https://valeriebeltrame.github.io/julebanko/",
   "dependencies": {
     "let-it-snow": "^1.1.6",
     "react": "^16.6.3",
