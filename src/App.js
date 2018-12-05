@@ -68,7 +68,7 @@ class App extends Component {
       song: 'STOPPED',
       glitter: 'STOPPED',
     },
-    soundNumber: 6,
+    soundNumber: -1,
   }
 
   pickRandomNumber = () => {
