@@ -1,32 +1,334 @@
+body {
+  background-color: var(--blue);
+  font-family: 'Mountains of Christmas', cursive;
+  color: white;
+  overflow: hidden;
+}
+
+:root {
+  --red-light: #f5624d;
+  --red-dark: #CC231E;
+  --green-light: #34A65F;
+  --green-dark: #0F8A5F;
+  --blue: #235E6F;
+}
+
+h1 {
+  font-size: 5em;
+  color: white;
+  text-shadow: 0px 0px 25px var(--green-light);
+}
+
+button {
+  font-family: 'Mountains of Christmas', cursive;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.bottom {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.bottom > img {
+  width: 100%;
+}
+
+.bottom > span {
+  bottom: 20px;
+  position: absolute;
+  color: var(--blue);
+  left: 40%;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.bottom > span > i {
+  font-style: normal;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.pickButton {
+  z-index: 2;
+  color: white;
+  background-color: var(--green-light);
+  border: 5px solid var(--green-dark);
+  text-align: center;
+  border-radius: 50%;
+  padding: 20px 30px;
+  font-size: 3em;
+}
+.pickButton:hover {
+  background-color: var(--green-dark);
+}
+.pickButton:active {
+  background-color: var(--green-light);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.side {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-gap: 10px;
+  grid-template-rows: repeat(12, 40px);
+  grid-auto-flow: column;
+  font-size: 1.7em;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.side > div {
+  background-color: var(--red-light);
   color: white;
+  border: 2px solid var(--red-dark);
+  border-radius: 2px;
+  animation: numberAppear 1s;
 }
 
-.App-link {
-  color: #61dafb;
+.numberContainer {
+  width: 100%;
+  position: absolute;
+  height: 300px;
+  top: 20vh;
+  pointer-events: none;
+}
+.numberContainer > div {
+  position: relative;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.present {
+  /* display: none; */
+  display: block;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+}
+
+.present > img {
+  height: 80%;
+}
+
+.number {
+  display: none;
+  pointer-events: all;
+  position: absolute;
+  z-index: 8;
+  font-size: 10em;
+  background-color: var(--red-light);
+  border: 3px solid var(--red-dark);
+  border-radius: 2px;
+  padding: 0px 80px;
+  opacity: 0;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%, -50%);
+}
+.number:hover {
+  cursor: pointer;
+  background-color: var(--red-dark);
+}
+.number:active {
+  background-color: var(--red-light);
+}
+
+/* https://codepen.io/Dbiz/pen/jYVrVz */
+
+#sleigh {
+  z-index: 3;
+  opacity: 0;
+  transform: translate(-3000px,1000px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 300px;
+  height: 100vh;
+  width: 90vw;
+}
+
+.snowstorm {
+  z-index: -10 !important;
+}
+
+@keyframes presentgrowth {
+  0% {
+    display: block; 
+    opacity: 1;
+    transform: scale(0);
+    transform: translate(0, -100px) scale(0);
+    /* transform: translateY(-50px); */
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    display: block; 
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  45% {
+    display: block;
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  50% {
+    display: block;
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  55% {
+    display: block;
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  60% {
+    display: block;
+    opacity: 1;
+    transform: rotate(0);
+  }
+  65% {
+    display: block;
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  70% {
+    display: block;
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+  75% {
+    display: block;
+    opacity: 1;
+    transform: rotate(5deg);
+  }
+  80% {
+    display: block;
+    opacity: 1;
+    transform: rotate(0);
+  }
+  95% {
+    display: block;
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  100% {
+    display: block;
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes sleighpath {
+  0%{
+      opacity: 0;
+      transform:translate(-3000px,1000px);
+  }
+
+  30%{
+      opacity:1 ;
+      transform:translate(0,0px);
+  }
+  31%{
+      opacity:1;
+      transform:translate(0px,0px) ;
+  }
+  35%{
+      opacity:1 ;
+      transform:translate(0,-5px);
+  }
+  40%{
+      opacity:1 ;
+      transform:translate(0,5px);
+  }
+  45%{
+      opacity:1 ;
+      transform:translate(0,0);
+  }
+  50%{
+      opacity:1 ;
+      transform:translate(0,5px);
+  }
+  55%{
+      opacity:1 ;
+      transform:translate(0,0);
+  }
+  60%{
+      opacity:1 ;
+      transform:translate(0,5px);
+  }
+  65%{
+      opacity:1 ;
+      transform:translate(0,0);
+  }
+  70%{
+      opacity:1 ;
+      transform:translate(0,5px);
+  }
+  75%{
+      opacity:1 ;
+      transform:translate(0,0);
+  }
+  80%{
+      opacity:1 ;
+      transform:translate(0,0);
+  }
+  100%{
+      opacity:0 ;
+      transform:translate(3000px,-1000px);
+  }
+}
+
+@keyframes buttonHide {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes buttonAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes numberAppear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes numberHide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
