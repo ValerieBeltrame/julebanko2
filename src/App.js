@@ -3,6 +3,26 @@ import sleigh from './sleigh.svg';
 import present from './present.svg';
 import snow from './snow.svg';
 import './App.css';
+import Sound from 'react-sound';
+
+import glitter from './audio/glitter.mp3'
+
+import weWish1 from './audio/1.mp3'
+import weWish2 from './audio/2.mp3'
+import weWish3 from './audio/3.mp3'
+import weWish4 from './audio/4.mp3'
+import weWish5 from './audio/5.mp3'
+import weWish6 from './audio/6.mp3'
+import weWish7 from './audio/7.mp3'
+
+import jb1 from './audio/jb1.mp3'
+import jb2 from './audio/jb2.mp3'
+import jb3 from './audio/jb3.mp3'
+import jb4 from './audio/jb4.mp3'
+import jb5 from './audio/jb5.mp3'
+import jb6 from './audio/jb6.mp3'
+import jb7 from './audio/jb7.mp3'
+import jb8 from './audio/jb8.mp3'
 
 let numberArray = []
 for (let i = 1; i <= 50; i++) {
@@ -13,6 +33,24 @@ for (let i = 1; i <= 50; i++) {
 window.onbeforeunload = function() {
   return "";
 }
+
+const sound = [
+  weWish1,
+  weWish2,
+  weWish3,
+  weWish4,
+  weWish5,
+  weWish6,
+  weWish7,
+  jb1,
+  jb2,
+  jb3,
+  jb4,
+  jb5,
+  jb6,
+  jb7,
+  jb8,
+]
 
 class App extends Component {
   state = {
@@ -26,11 +64,17 @@ class App extends Component {
     },
     opacity: {},
     display: {},
+    playStatus: {
+      song: 'STOPPED',
+      glitter: 'STOPPED',
+    },
+    soundNumber: 6,
   }
 
   pickRandomNumber = () => {
     const shuffledArray = this.shuffle(this.state.availableNumbers)
     const newAvailableNumbers = shuffledArray.slice(1, shuffledArray.length)
+    const soundNumber = this.state.soundNumber < sound.length ? this.state.soundNumber + 1 : 0
  
     this.setState({
       currentNumber: shuffledArray[0],
@@ -44,7 +88,12 @@ class App extends Component {
       display: {
         present: 'block',
         number: 'block',
-      }
+      },
+      playStatus: {
+        song: 'PLAYING',
+        glitter: 'STOPPED',
+      },
+      soundNumber,
     })
 
     setTimeout(() => {
@@ -104,7 +153,11 @@ class App extends Component {
       },
       opacity: {
         button: 1
-      }
+      },
+      playStatus: {
+        song: 'STOPPED',
+        glitter: 'PLAYING',
+      },
     })
 
     setTimeout(() => {
@@ -126,8 +179,22 @@ class App extends Component {
       opacity,
       currentNumber,
       display,
+      playStatus,
+      soundNumber,
     } = this.state;
 
+    let speed;
+    console.log(soundNumber)
+    if (-1 < soundNumber && soundNumber <= 6) {
+      console.log('hello')
+      speed = 1.4
+    } else if (soundNumber > 6 && soundNumber <= 14) {
+      speed = 2
+    }
+
+    console.log(speed)
+
+    console.log(soundNumber)
     return (
       <div className="App">
         <h1>KNO's festlige Banko</h1>
@@ -156,7 +223,6 @@ class App extends Component {
             className="present"
             style={{
               animation: animations.present,
-              // display: display.present,
             }} >
           <img
             src={present}
@@ -176,6 +242,8 @@ class App extends Component {
           <img src={snow} />
           <span><i>Glædelig jul</i> fra Personaleforeningen, a part of UVdata, a part of KMD.</span>
         </div>
+        <Sound url={glitter} playStatus={playStatus.glitter} playbackRate={2.5}/>
+        <Sound url={sound[soundNumber]} playStatus={playStatus.song} playbackRate={speed}/>
       </div>
     );
   }
