@@ -1,7 +1,7 @@
 {
   "main.css": "/julebanko2/static/css/main.ba68bb04.chunk.css",
-  "main.js": "/julebanko2/static/js/main.b1340cb5.chunk.js",
-  "main.js.map": "/julebanko2/static/js/main.b1340cb5.chunk.js.map",
+  "main.js": "/julebanko2/static/js/main.1b314d60.chunk.js",
+  "main.js.map": "/julebanko2/static/js/main.1b314d60.chunk.js.map",
   "static/js/1.167a9a9c.chunk.js": "/julebanko2/static/js/1.167a9a9c.chunk.js",
   "static/js/1.167a9a9c.chunk.js.map": "/julebanko2/static/js/1.167a9a9c.chunk.js.map",
   "runtime~main.js": "/julebanko2/static/js/runtime~main.0059e6b0.js",
@@ -27,6 +27,6 @@
   "static/media/jb8.mp3": "/julebanko2/static/media/jb8.ccf30ec9.mp3",
   "static/css/main.ba68bb04.chunk.css.map": "/julebanko2/static/css/main.ba68bb04.chunk.css.map",
   "index.html": "/julebanko2/index.html",
-  "precache-manifest.882bbade7325b45a6b13175d067da1dc.js": "/julebanko2/precache-manifest.882bbade7325b45a6b13175d067da1dc.js",
+  "precache-manifest.b136a0ffe01eb18455d87a36f0022ec1.js": "/julebanko2/precache-manifest.b136a0ffe01eb18455d87a36f0022ec1.js",
   "service-worker.js": "/julebanko2/service-worker.js"
 }

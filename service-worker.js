@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/julebanko2/precache-manifest.882bbade7325b45a6b13175d067da1dc.js"
+  "/julebanko2/precache-manifest.b136a0ffe01eb18455d87a36f0022ec1.js"
 );
 
 workbox.clientsClaim();

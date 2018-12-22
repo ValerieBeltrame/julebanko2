@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/julebanko2/static/media/5.840533a2.mp3"
   },
   {
-    "revision": "b1340cb57408750acccf",
+    "revision": "1b314d6072357121532d",
     "url": "/julebanko2/static/css/main.ba68bb04.chunk.css"
   },
   {
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/julebanko2/static/media/4.4a1321e5.mp3"
   },
   {
-    "revision": "b1340cb57408750acccf",
-    "url": "/julebanko2/static/js/main.b1340cb5.chunk.js"
+    "revision": "1b314d6072357121532d",
+    "url": "/julebanko2/static/js/main.1b314d60.chunk.js"
   },
   {
     "revision": "307c23c562d8feca0c3fdbd6deea81f4",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/julebanko2/static/media/jb8.ccf30ec9.mp3"
   },
   {
-    "revision": "a9596a0252f3d03c62183bb411283fc2",
+    "revision": "959d137d0841d1328f1b349b60ab5de4",
     "url": "/julebanko2/index.html"
   }
 ];
