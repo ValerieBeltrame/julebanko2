@@ -187,7 +187,7 @@ class App extends Component {
     if (-1 < soundNumber && soundNumber <= 6) {
       speed = 1.4
     } else if (soundNumber > 6 && soundNumber <= 14) {
-      speed = 2
+      speed = 2.1
     }
 
     return (
