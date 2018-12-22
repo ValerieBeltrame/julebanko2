@@ -45,7 +45,7 @@ button:hover {
   bottom: 20px;
   position: absolute;
   color: var(--blue);
-  left: 40%;
+  left: 50%;
   font-weight: 600;
   font-family: sans-serif;
 }
@@ -83,7 +83,7 @@ button:hover {
   top: 20px;
   height: 80vh;
   display: grid;
-  grid-template-columns: repeat(4, 40px);
+  grid-template-columns: repeat(8, 40px);
   grid-gap: 10px;
   grid-template-rows: repeat(12, 40px);
   grid-auto-flow: column;

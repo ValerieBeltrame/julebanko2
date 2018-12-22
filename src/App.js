@@ -25,7 +25,7 @@ import jb7 from './audio/jb7.mp3'
 import jb8 from './audio/jb8.mp3'
 
 let numberArray = []
-for (let i = 1; i <= 50; i++) {
+for (let i = 1; i <= 90; i++) {
   numberArray.push(i);
 }
 
@@ -184,20 +184,15 @@ class App extends Component {
     } = this.state;
 
     let speed;
-    console.log(soundNumber)
     if (-1 < soundNumber && soundNumber <= 6) {
-      console.log('hello')
       speed = 1.4
     } else if (soundNumber > 6 && soundNumber <= 14) {
       speed = 2
     }
 
-    console.log(speed)
-
-    console.log(soundNumber)
     return (
       <div className="App">
-        <h1>KNO's festlige Banko</h1>
+        <h1>Den festlige julebanko</h1>
         <button
           className="pickButton"
           onClick={this.pickRandomNumber}
@@ -240,9 +235,9 @@ class App extends Component {
         </div>
         <div className="bottom">
           <img src={snow} />
-          <span><i>Glædelig jul</i> fra Personaleforeningen, a part of UVdata, a part of KMD.</span>
+          <span><i>Glædelig jul og godt nytår!</i></span>
         </div>
-        <Sound url={glitter} playStatus={playStatus.glitter} playbackRate={2.5}/>
+        <Sound url={glitter} playStatus={playStatus.glitter} playbackRate={2.7}/>
         <Sound url={sound[soundNumber]} playStatus={playStatus.song} playbackRate={speed}/>
       </div>
     );
