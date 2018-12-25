@@ -24,6 +24,19 @@ import jb6 from './audio/jb6.mp3'
 import jb7 from './audio/jb7.mp3'
 import jb8 from './audio/jb8.mp3'
 
+import sn1 from './audio/sn1.mp3'
+import sn2 from './audio/sn2.mp3'
+import sn3 from './audio/sn3.mp3'
+import sn4 from './audio/sn4.mp3'
+import sn5 from './audio/sn5.mp3'
+import sn6 from './audio/sn6.mp3'
+import sn7 from './audio/sn7.mp3'
+import sn8 from './audio/sn8.mp3'
+import sn9 from './audio/sn9.mp3'
+import sn10 from './audio/sn10.mp3'
+import sn11 from './audio/sn11.mp3'
+import sn12 from './audio/sn12.mp3'
+
 let numberArray = []
 for (let i = 1; i <= 90; i++) {
   numberArray.push(i);
@@ -50,6 +63,18 @@ const sound = [
   jb6,
   jb7,
   jb8,
+  sn1,
+  sn2,
+  sn3,
+  sn4,
+  sn5,
+  sn6,
+  sn7,
+  sn8,
+  sn9,
+  sn10,
+  sn11,
+  sn12,
 ]
 
 class App extends Component {
@@ -74,7 +99,7 @@ class App extends Component {
   pickRandomNumber = () => {
     const shuffledArray = this.shuffle(this.state.availableNumbers)
     const newAvailableNumbers = shuffledArray.slice(1, shuffledArray.length)
-    const soundNumber = this.state.soundNumber < sound.length ? this.state.soundNumber + 1 : 0
+    const soundNumber = this.state.soundNumber < sound.length -1 ? this.state.soundNumber + 1 : 0
  
     this.setState({
       currentNumber: shuffledArray[0],
@@ -188,6 +213,8 @@ class App extends Component {
       speed = 1.4
     } else if (soundNumber > 6 && soundNumber <= 14) {
       speed = 2.1
+    } else if (soundNumber > 14 && soundNumber <= 26) {
+      speed = 1.5
     }
 
     return (
