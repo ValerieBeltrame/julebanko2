@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "840533a2a41c4d2e8700829bf8e87196",
-    "url": "/julebanko2/static/media/5.840533a2.mp3"
+    "revision": "25e0a523e2bd81ccc64e40e8ca6a2d2b",
+    "url": "/julebanko2/static/media/jb4.25e0a523.mp3"
   },
   {
-    "revision": "1b314d6072357121532d",
-    "url": "/julebanko2/static/css/main.ba68bb04.chunk.css"
+    "revision": "9121792fa21fe11ecea7",
+    "url": "/julebanko2/static/css/main.3b0a3637.chunk.css"
   },
   {
-    "revision": "167a9a9c2b61ace4f6ee",
-    "url": "/julebanko2/static/js/1.167a9a9c.chunk.js"
+    "revision": "0346b7bd96a63553d270",
+    "url": "/julebanko2/static/js/1.0346b7bd.chunk.js"
   },
   {
     "revision": "0059e6b064147bd18b79",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/julebanko2/static/media/4.4a1321e5.mp3"
   },
   {
-    "revision": "1b314d6072357121532d",
-    "url": "/julebanko2/static/js/main.1b314d60.chunk.js"
+    "revision": "840533a2a41c4d2e8700829bf8e87196",
+    "url": "/julebanko2/static/media/5.840533a2.mp3"
   },
   {
     "revision": "307c23c562d8feca0c3fdbd6deea81f4",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/julebanko2/static/media/jb3.9d87a5d8.mp3"
   },
   {
-    "revision": "25e0a523e2bd81ccc64e40e8ca6a2d2b",
-    "url": "/julebanko2/static/media/jb4.25e0a523.mp3"
+    "revision": "9121792fa21fe11ecea7",
+    "url": "/julebanko2/static/js/main.9121792f.chunk.js"
   },
   {
     "revision": "e061d0c195c57489fd78093f1948b0bb",
@@ -92,7 +92,55 @@ self.__precacheManifest = [
     "url": "/julebanko2/static/media/jb8.ccf30ec9.mp3"
   },
   {
-    "revision": "959d137d0841d1328f1b349b60ab5de4",
+    "revision": "526d0d61b9aa926e6bdab5c7ab3f568e",
+    "url": "/julebanko2/static/media/sn1.526d0d61.mp3"
+  },
+  {
+    "revision": "cef17d3e64adb03d9121bda9e491e1c0",
+    "url": "/julebanko2/static/media/sn2.cef17d3e.mp3"
+  },
+  {
+    "revision": "261bbd5321c211581d75e371fd307a90",
+    "url": "/julebanko2/static/media/sn3.261bbd53.mp3"
+  },
+  {
+    "revision": "43b49efa6a08639587eac6c087528408",
+    "url": "/julebanko2/static/media/sn4.43b49efa.mp3"
+  },
+  {
+    "revision": "3d00ad79be0d816faf88f31424c28a58",
+    "url": "/julebanko2/static/media/sn5.3d00ad79.mp3"
+  },
+  {
+    "revision": "b85e3dd46297d63d94988325100ac7fb",
+    "url": "/julebanko2/static/media/sn6.b85e3dd4.mp3"
+  },
+  {
+    "revision": "41efc7551775fdbec6d086cb6897620e",
+    "url": "/julebanko2/static/media/sn7.41efc755.mp3"
+  },
+  {
+    "revision": "4cf6fc746e9c84c30f611687fc9e7609",
+    "url": "/julebanko2/static/media/sn8.4cf6fc74.mp3"
+  },
+  {
+    "revision": "e289f4423f1e69ac94726a3a03c5b994",
+    "url": "/julebanko2/static/media/sn9.e289f442.mp3"
+  },
+  {
+    "revision": "9722325eb66ccb31f1b8773091182ab0",
+    "url": "/julebanko2/static/media/sn10.9722325e.mp3"
+  },
+  {
+    "revision": "e6acbd0025e072b1cad2482e85a5e733",
+    "url": "/julebanko2/static/media/sn11.e6acbd00.mp3"
+  },
+  {
+    "revision": "08313ed82c046d21e9c9d1986b573c94",
+    "url": "/julebanko2/static/media/sn12.08313ed8.mp3"
+  },
+  {
+    "revision": "817d3e42895f449d907112ebccc68771",
     "url": "/julebanko2/index.html"
   }
 ];
